@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_shared_services_tab_details",
+  "info": {
+    "displayName": "servicesTabDetail"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "blocks"
+    },
+    "order": {
+      "type": "integer"
+    }
+  },
+  "config": {}
+}

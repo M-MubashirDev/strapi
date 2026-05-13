@@ -1,0 +1,94 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_pages",
+  "info": {
+    "singularName": "home-page",
+    "pluralName": "home-pages",
+    "displayName": "Home Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heroTitle": {
+      "type": "string"
+    },
+    "heroSubtitle": {
+      "type": "string"
+    },
+    "heroImages": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "heroCTAText": {
+      "type": "string"
+    },
+    "marqueeItems": {
+      "type": "component",
+      "component": "shared.marquee-item",
+      "repeatable": true
+    },
+    "partnersSectionTitle": {
+      "type": "string",
+      "default": "Global Partners"
+    },
+    "aboutText": {
+      "type": "text"
+    },
+    "stats": {
+      "type": "component",
+      "component": "shared.stat",
+      "repeatable": true
+    },
+    "ctaSection": {
+      "type": "component",
+      "component": "shared.cta-section",
+      "repeatable": false
+    },
+    "servicesSectionTitle": {
+      "type": "string"
+    },
+    "servicesSectionSubtitle": {
+      "type": "string"
+    },
+    "industries": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::industry.industry"
+    },
+    "partners": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::partner.partner"
+    },
+    "services": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::service.service"
+    },
+    "testimonials": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::testimonial.testimonial"
+    },
+    "industriesSectionTitle": {
+      "type": "string"
+    },
+    "industriesSectionSubtitle": {
+      "type": "string"
+    },
+    "reviewsSectionTitle": {
+      "type": "string"
+    },
+    "reviewsSectionSubtitle": {
+      "type": "string"
+    }
+  }
+}
